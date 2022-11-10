@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06</title>
+</head>
+<h1>Verificação de meta</h1>
+<div id="exemplo"></div>
+<body>
+    <script>
+        
+        let valorfixo = 2000;
+        let valorFuncionario = prompt("Digite o valor de vendas que você atingiu: ");
+        let resul;
+        let positivo = "Você ganhou !!!"
+        let negativo = "Você perdeu"
+        if (valorFuncionario > valorfixo){resul = "Valor Fixo: " + valorfixo + "</br>Valor atingido pelo funcionario: " + valorFuncionario + "</br>" + positivo }
+        else {resul = "Valor da meta: " + valorfixo + "</br>Valor atingido pelo funcionario: " + valorFuncionario + "</br>" + negativo;}
+
+        document.getElementById("exemplo").innerHTML = resul;
+
+    </script>
+</body>
+</html>

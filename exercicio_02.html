@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>Quem é mais obeso</H1>
+    <div id="resultado"></div>
+    <script>
+        let nome1 = prompt("Digite o nome da primeira pessoa");
+        let peso1 = prompt("Digite o peso");
+        let nome2 = prompt("Digite o nome da segunda pessoa");
+        let peso2 = prompt("Digite o peso");
+        let resul;
+        if(peso1 > peso2){
+             resul = nome1 + " que tem " + peso1 +"kg"+ " é mais obeso que " + nome2 + " que tem " + peso2 + "Kg";
+            } 
+            else{
+                 resul = nome2 +" que tem " + peso2 + "Kg" + " é mais obeso que " + nome1 + " que tem " + peso1 + "Kg";}
+
+    document.getElementById("resultado").innerHTML = resul;
+
+    </script>
+</body>
+</html>
